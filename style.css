@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    text-rendering: optimizeLegibility;
+}
+
+.main-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(213, 196, 85, 1) 50%);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 5rem;
+    padding-top: 2rem;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.togol-icon {
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+/* this is hide right slid ul box  */
+.dropDown {
+    width: 20rem;
+    height: 36.6rem;
+    top: 0%;
+    right: -800px;
+    position: absolute;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    z-index: 10;
+}
+
+.cros-icon {
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+    background-color: rgba(213, 196, 85, 1);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.fa-solid {
+    margin-left: 9px;
+    margin-top: 5px;
+}
+
+.cros-icon:active {
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+.dropDown ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+    margin-left: 1rem;
+    gap: 20re;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dropDown ul li {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.dropDown ul li:nth-child(1) {
+    color: rgba(213, 196, 85, 1);
+}
+
+.dropDown ul li:hover {
+    color: rgba(213, 196, 85, 1);
+}
+
+/* section 1 start  */
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sub-sec-1 {
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.sub-sec-1 p {
+    font-size: 1rem;
+    color: RGB(213, 196, 85);
+    font-family: poppins;
+}
+
+.sub-sec-1 h1 {
+    font-size: 5rem;
+    font-family: poppins, arial;
+    width: 30rem;
+    line-height: 100px;
+    font-weight: 600;
+}
+
+.btns {
+    display: flex;
+    margin-top: 2rem;
+    gap: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-family: poppins, arial, sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-1 {
+    position: relative;
+    background-color: RGB(213, 196, 85);
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 10rem;
+    height: 3rem;
+    padding: 15px;
+    border: 2px solid skyblue;
+
+}
+
+.btn-2 {
+    width: 10rem;
+    height: 3rem;
+    padding: 15px;
+    width: 6rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-width: 1px;
+    border: 2px solid transparent;
+    transition: border .5s;
+    -webkit-transition: border .5s;
+    -moz-transition: border .5s;
+    -ms-transition: border .5s;
+    -o-transition: border .5s;
+}
+
+.btn-2:hover {
+    padding: 15px;
+    border: 2px solid skyblue;
+}
+
+/* image part  */
+.section-1 img {
+    margin-top: -100px;
+    width: 700px;
+    height: 700px;
+    margin-left: -750px;
+    position: relative;
+    z-index: 8;
+}
+
+.bottom-text {
+    font-family: poppins, arial, roboto;
+    margin-top: 5rem;
+    color: rgb(166, 162, 162);
+    font-size: .8rem;
+}
+
+.bottom-text a {
+    color: RGB(213, 196, 85);
+    position: relative;
+    z-index: 99;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-section {
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin-inline: 0;
+        padding-top: 10px;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        margin-left: 10px;
+    }
+    .togol-icon{
+        margin-right: 10px;
+    }
+    .section-1 {
+        display: block;
+
+        position: relative;
+    }
+    .sub-sec-1{
+       
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .sub-sec-1 p {
+        text-align: center;
+        font-size: .8rem;
+  
+    }
+    .sub-sec-1 h1 {
+        margin-top: -20px;
+        text-align: center;
+        margin-left: -70px;
+        font-size: 2rem;}
+        .btns {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            gap: 5px;
+        }
+        .btn-1{
+            width: 95%;
+        }
+        .btn-2{
+            width: 95%;
+        }
+        .section-1 img {
+            margin-top: 10px;
+           margin-left: -140px;
+            width: 600px;
+            height: 600px;
+            position: relative;
+            z-index: 8;
+        }
+        
+        .bottom-text {
+            text-align: center;
+            font-family: poppins, arial, roboto;
+            margin-top: 33rem;
+            color: rgb(166, 162, 162);
+            font-size: .8rem;
+            position: absolute;
+            z-index: 10;
+        }
+}
